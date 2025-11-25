@@ -1,17 +1,15 @@
 duckdb
 pandas
-numpy   
+numpy
 streamlit
-sqlalchemy  
-databricks-sql-connector 
+sqlalchemy
+databricks-sql-connector
 sqlparse
 databricks-sdk
 streamlit-authenticator
 python-dotenv
-langchain
-langchain-community
-langchain-openai
 langchain-core
+langchain-experimental
 huggingface_hub
 torch
 transformers
@@ -19,3 +17,4 @@ google-generativeai
 langchain_google_genai
 scikit-learn
 plotly
+openai
