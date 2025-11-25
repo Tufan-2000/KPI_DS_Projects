@@ -13,7 +13,7 @@ import plotly.graph_objects as go
 
 # LangChain imports (2025+)
 from langchain_core.prompts import PromptTemplate
-#from langchain.chains import LLMChain
+from langchain_community.chains import LLMChain
 from langchain_openai import ChatOpenAI
 
 
@@ -294,7 +294,7 @@ def create_sql_with_routed_pipeline(question: str, table_schema: str, previous_e
     
     routed_prompt = _build_routed_prompt(question, table_schema, plan, previous_error, previous_sql)
     prompt_template = PromptTemplate.from_template("{prompt}")
-    llm_chain = ChatOpenAI(
+    llm_chain = LLMChain(
         llm=_pick_llm_for_complexity(level),
         prompt=prompt_template
     )
@@ -649,6 +649,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
