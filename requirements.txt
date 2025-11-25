@@ -8,10 +8,8 @@ sqlparse
 databricks-sdk
 streamlit-authenticator
 python-dotenv
-langchain==0.1.152
-langchain-community
-langchain-openai
-langchain-core
+langchain
+openai
 huggingface_hub
 torch
 transformers
@@ -19,3 +17,4 @@ google-generativeai
 langchain_google_genai
 scikit-learn
 plotly
+
