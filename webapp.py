@@ -6,7 +6,7 @@ import pandas as pd
 import time
 import re
 from langchain_core.prompts import PromptTemplate
-from langchain.chains.llm import LLMChain
+from langchain.chains import LLMChain
 from langchain_openai import ChatOpenAI
 from collections import defaultdict
 from hashlib import md5
@@ -646,3 +646,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
