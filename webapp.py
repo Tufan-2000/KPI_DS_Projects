@@ -20,9 +20,9 @@ load_dotenv()
 # (I'll include the key ones, but you should import from your main module)
 
 # ------------ Configuration ------------
-EASY_MODEL = os.getenv("EASY_LLM", "gpt-3.5-turbo")
-MEDIUM_MODEL = os.getenv("MEDIUM_LLM", "gpt-4o-mini")
-HARD_MODEL = os.getenv("HARD_LLM", "gpt-4o")
+EASY_MODEL = st.secrets("EASY_LLM", "gpt-3.5-turbo")
+MEDIUM_MODEL = st.secrets("MEDIUM_LLM", "gpt-4o-mini")
+HARD_MODEL = st.secrets("HARD_LLM", "gpt-4o")
 
 _sql_cache = {}
 
@@ -644,4 +644,5 @@ def main():
                     st.dataframe(df, use_container_width=True)
 
 if __name__ == "__main__":
+
     main()
