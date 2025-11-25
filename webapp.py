@@ -5,14 +5,17 @@ import sqlite3
 import pandas as pd
 import time
 import re
-from langchain_core.prompts import PromptTemplate
-from langchain.chains import LLMChain
-from langchain_openai import ChatOpenAI
 from collections import defaultdict
 from hashlib import md5
 from dotenv import load_dotenv
 import plotly.express as px
 import plotly.graph_objects as go
+
+# LangChain imports (2025+)
+from langchain_core.prompts import PromptTemplate
+from langchain_core.chains import LLMChain
+from langchain_experimental.chat_models import ChatOpenAI  # replaces deprecated langchain_openai
+
 
 load_dotenv()
 
@@ -646,4 +649,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
