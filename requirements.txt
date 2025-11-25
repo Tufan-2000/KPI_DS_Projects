@@ -9,7 +9,9 @@ databricks-sdk
 streamlit-authenticator
 python-dotenv
 langchain
-openai
+langchain-community
+langchain-openai
+langchain-core
 huggingface_hub
 torch
 transformers
@@ -17,4 +19,3 @@ google-generativeai
 langchain_google_genai
 scikit-learn
 plotly
-
